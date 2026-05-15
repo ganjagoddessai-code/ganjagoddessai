@@ -719,9 +719,30 @@
 		.wide, .slim { grid-column: span 12; }
 	}
 	</style>
-	<script type="application/ld+json"> { "@context":"https://schema.org", "@graph":[ { "@type":"WebSite", "@id":"https://example.com/ganjagoddessai#website", "url":"https://example.com/ganjagoddessai", "name":"GanjaGoddessAI", "description":"Adult-only cannabis-aware AI concierge for education, product discovery, blueprinting, AR/VR design, and compliant commerce.", "inLanguage":"en-US", "potentialAction":{ "@type":"SearchAction", "target":"https://example.com/ganjagoddessai/search?q={search_term_string}", "query-input":"required name=search_term_string" } }, { "@type":"Organization", "@id":"https://example.com/ganjagoddessai#org", "name":"GanjaGoddessAI", "url":"https://example.com/ganjagoddessai", "logo":"https://example.com/logo.png", "sameAs":["https://www.instagram.com/","https://www.youtube.com/","https://www.tiktok.com/"] }, { "@type":"WebPage", "@id":"https://example.com/ganjagoddessai#page", "url":"https://example.com/ganjagoddessai", "name":"GanjaGoddessAI Home", "isPartOf":{"@id":"https://example.com/ganjagoddessai#website"}, "about":{"@id":"https://example.com/ganjagoddessai#org"}, "description":"Immersive adult-only cannabis concierge with voice, chat, file upload, AR/VR, and commerce tools." }, { "@type":"BreadcrumbList", "itemListElement":[ {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/ganjagoddessai"}, {"@type":"ListItem","position":2,"name":"AI Concierge","item":"https://example.com/ganjagoddessai/ai"}, {"@type":"ListItem","position":3,"name":"Blueprinting","item":"https://example.com/ganjagoddessai/blueprints"} ] }, { "@type":"FAQPage", "mainEntity":[ { "@type":"Question", "name":"Is this service legal in my area?", "acceptedAnswer": { "@type":"Answer", "text":"GanjaGoddessAI uses advanced geolocation and compliance mapping to only show products and services available under your local regulations." } }, { "@type":"Question", "name":"How does the AI concierge learn my preferences?", "acceptedAnswer": { "@type":"Answer", "text":"With your consent, the AI maintains a 'Stash Memory' of your reviews, favorite strains, and design project history to provide increasingly accurate advice." } } ] }, { "@type":"Service", "name":"Cannabis AI Concierge", "serviceType":"Artificial Intelligence Consultation", "provider":{"@id":"https://example.com/ganjagoddessai#org"}, "description":"Natural-language guidance for product discovery, shopping lists, and compliant fulfillment workflows." } ] } </script>
-</head>
 
+<script type="application/ld+json"> { "@context":"https://schema.org", "@graph":[ { "@type":"WebSite", "@id":"https://example.com/ganjagoddessai#website", "url":"https://example.com/ganjagoddessai", "name":"GanjaGoddessAI", "description":"Adult-only cannabis-aware AI concierge for education, product discovery, blueprinting, AR/VR design, and compliant commerce.", "inLanguage":"en-US", "potentialAction":{ "@type":"SearchAction", "target":"https://example.com/ganjagoddessai/search?q={search_term_string}", "query-input":"required name=search_term_string" } }, { "@type":"Organization", "@id":"https://example.com/ganjagoddessai#org", "name":"GanjaGoddessAI", "url":"https://example.com/ganjagoddessai", "logo":"https://example.com/logo.png", "sameAs":["https://www.instagram.com/","https://www.youtube.com/","https://www.tiktok.com/"] }, { "@type":"WebPage", "@id":"https://example.com/ganjagoddessai#page", "url":"https://example.com/ganjagoddessai", "name":"GanjaGoddessAI Home", "isPartOf":{"@id":"https://example.com/ganjagoddessai#website"}, "about":{"@id":"https://example.com/ganjagoddessai#org"}, "description":"Immersive adult-only cannabis concierge with voice, chat, file upload, AR/VR, and commerce tools." }, { "@type":"BreadcrumbList", "itemListElement":[ {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/ganjagoddessai"}, {"@type":"ListItem","position":2,"name":"AI Concierge","item":"https://example.com/ganjagoddessai/ai"}, {"@type":"ListItem","position":3,"name":"Blueprinting","item":"https://example.com/ganjagoddessai/blueprints"} ] }, { "@type":"FAQPage", "mainEntity":[ { "@type":"Question", "name":"Is this service legal in my area?", "acceptedAnswer": { "@type":"Answer", "text":"GanjaGoddessAI uses advanced geolocation and compliance mapping to only show products and services available under your local regulations." } }, { "@type":"Question", "name":"How does the AI concierge learn my preferences?", "acceptedAnswer": { "@type":"Answer", "text":"With your consent, the AI maintains a 'Stash Memory' of your reviews, favorite strains, and design project history to provide increasingly accurate advice." } } ] }, { "@type":"Service", "name":"Cannabis AI Concierge", "serviceType":"Artificial Intelligence Consultation", "provider":{"@id":"https://example.com/ganjagoddessai#org"}, "description":"Natural-language guidance for product discovery, shopping lists, and compliant fulfillment workflows." } ] } </script>
+
+<!-- CORE STYLESHEET -->
+<link rel="stylesheet" href="/style.css">
+
+<!-- MAIN APP SCRIPT (defer = non-blocking render) -->
+<script src="/script.js" defer></script>
+
+<!-- PWA MANIFEST -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- SERVICE WORKER BOOTSTRAP -->
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(reg => console.log("SW registered:", reg.scope))
+      .catch(err => console.log("SW failed:", err));
+  });
+}
+</script>
+</head>
+	
 <body>
 	<div class="agegate" id="ageGate" aria-modal="true" role="dialog" aria-labelledby="ageTitle">
 		<div class="agebox">
