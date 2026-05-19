@@ -1,0 +1,333 @@
+{
+  "name": "ganjagoddessAI",
+  "short_name": "ggai",
+  "description": "Immersive AI interface with orbital navigation, conversational intelligence, multimodal file analysis, generative UI systems, voice interaction, AI-native indexing architecture, and responsive holographic orbital environments.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
+  },
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "any",
+  "lang": "en-US",
+  "dir": "ltr",
+  "theme_color": "#39ff14",
+  "background_color": "#0b0b0f",
+  "dominant_color": "#39ff14",
+  "categories": [
+    "productivity",
+    "utilities",
+    "ai",
+    "lifestyle",
+    "entertainment",
+    "social",
+    "communication",
+    "multimedia",
+    "developer",
+    "education"
+  ],
+  "iarc_rating_id": "",
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Desktop orbital interface"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow",
+      "label": "Mobile goddess AI interface"
+    },
+    {
+      "src": "/screenshots/chat.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Conversational AI system"
+    },
+    {
+      "src": "/screenshots/upload.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "File upload and analysis tools"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open AI Chat",
+      "short_name": "Chat",
+      "description": "Launch AI conversational interface",
+      "url": "/?mode=chat",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Voice Mode",
+      "short_name": "Voice",
+      "description": "Activate voice interaction",
+      "url": "/?mode=voice",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "File Analysis",
+      "short_name": "Files",
+      "description": "Upload and analyze documents and images",
+      "url": "/?mode=files",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Orbital Navigation",
+      "short_name": "Orbit",
+      "description": "Open orbital navigation system",
+      "url": "/?mode=orbit",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Creative Studio",
+      "short_name": "Studio",
+      "description": "Open generative creative tools",
+      "url": "/?mode=studio",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+ggai",
+      "url": "/open?target=%s"
+    },
+    {
+      "protocol": "mailto",
+      "url": "/mail?target=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/analyze",
+      "accept": {
+        "image/*": [
+          ".png",
+          ".jpg",
+          ".jpeg",
+          ".gif",
+          ".webp"
+        ],
+        "application/pdf": [
+          ".pdf"
+        ],
+        "text/plain": [
+          ".txt"
+        ],
+        "application/json": [
+          ".json"
+        ]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "media",
+          "accept": [
+            "image/*",
+            "application/pdf",
+            "text/plain"
+          ]
+        }
+      ]
+    }
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope_extensions": [
+    {
+      "origin": "https://ganjagoddessai.com"
+    }
+  ],
+  "background": {
+    "service_worker": "/service-worker.js"
+  },
+  "permissions": [
+    "microphone",
+    "camera",
+    "notifications",
+    "clipboard-read",
+    "clipboard-write"
+  ],
+  "features": {
+    "voice_interface": true,
+    "multimodal_analysis": true,
+    "orbital_navigation": true,
+    "immersive_backgrounds": true,
+    "gesture_controls": true,
+    "ai_chat": true,
+    "progressive_web_app": true,
+    "offline_support": true,
+    "dynamic_rendering": true,
+    "responsive_layout": true
+  },
+  "content_security": {
+    "default_policy": "strict-origin",
+    "frame_protection": true,
+    "trusted_sources": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://cdnjs.cloudflare.com",
+      "https://cdn.jsdelivr.net"
+    ]
+  },
+  "developer": {
+    "name": "ganjagoddessAI",
+    "website": "https://ganjagoddessai.com",
+    "repository": "https://github.com/ganjagoddessai-code/ganjagoddessai",
+    "support": "https://ganjagoddessai.com/support",
+    "email": "support@ganjagoddessai.com"
+  },
+  "localization": {
+    "default_locale": "en-US",
+    "supported_locales": [
+      "en-US",
+      "en-GB",
+      "es-ES",
+      "fr-FR",
+      "de-DE"
+    ]
+  },
+  "integration_points": {
+    "openai": true,
+    "voice_processing": true,
+    "file_upload": true,
+    "websocket_support": true,
+    "analytics": true,
+    "cloud_sync": true
+  },
+  "accessibility": {
+    "high_contrast_support": true,
+    "screen_reader_support": true,
+    "keyboard_navigation": true,
+    "reduced_motion_support": true
+  },
+  "seo": {
+    "indexable": true,
+    "ai_discovery_enabled": true,
+    "structured_data_enabled": true,
+    "open_graph_enabled": true,
+    "twitter_cards_enabled": true
+  },
+  "monetization": {
+    "affiliate_support": true,
+    "sponsor_ready": true,
+    "adsense_ready": true,
+    "subscription_support": true
+  },
+  "performance": {
+    "lazy_loading": true,
+    "asset_caching": true,
+    "gpu_acceleration": true,
+    "preload_critical_assets": true
+  }
+}
