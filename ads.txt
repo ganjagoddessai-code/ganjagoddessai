@@ -1,0 +1,16 @@
+# Google AdSense Verification
+google-adsense-platform-account=ca-pub-XXXXXXXXXXXXXXXX verified=ca-pub-XXXXXXXXXXXXXXXX
+
+# Authorized Digital Sellers
+google-site-verification=YOUR_GOOGLE_VERIFICATION_CODE
+
+# DMCA Verification (if applicable)
+DMCA-contact=support@ganjagoddessai.com
+
+# Reseller Domains
+reseller-account: ca-pub-XXXXXXXXXXXXXXXX
+
+# Additional seller information
+contact-email: support@ganjagoddessai.com
+contact-url: https://ganjagoddessai.com/contact
+contact-phone: +1-XXXXXXXXXX
