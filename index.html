@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K3FLEJ97"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R9K3FLEJ97');
+</script>
 <meta charset="UTF-8">
 <title>Ganjagoddessai Orbital AI</title>
 
@@ -523,7 +532,7 @@ const ctx=canvas.getContext("2d");
 function resize(){canvas.width=innerWidth;canvas.height=innerHeight;}
 window.addEventListener("resize",resize,{passive:true});resize();
 let stars=Array.from({length:120},()=>({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*2}));
-function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#39ff14";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();s.y+=0.2;if(s.y>canvas.height)s.y=0;});requestAnimationFrame(draw);}
+function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#39ff14";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();s.y+=0.2;if(s.y>canvas.height)s.y=-5;});requestAnimationFrame(draw);}
 draw();
 
 function captureEmail(){
