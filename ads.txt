@@ -1,16 +1,147 @@
-# Google AdSense Verification
-google-adsense-platform-account=ca-pub-XXXXXXXXXXXXXXXX verified=ca-pub-XXXXXXXXXXXXXXXX
+# ads.txt - Authorized Digital Sellers for ganjagoddessai.com
+# This file contains a list of all authorized sellers of direct inventory for ganjagoddessai.com
+# Format: text/plain
+# Last Updated: 2026-06-01
+# Documentation: https://iabtechlab.com/ads-txt/
 
-# Authorized Digital Sellers
-google-site-verification=YOUR_GOOGLE_VERIFICATION_CODE
+# =============================================================================
+# SECTION 1: GOOGLE PLATFORMS
+# =============================================================================
 
-# DMCA Verification (if applicable)
-DMCA-contact=support@ganjagoddessai.com
+# Google AdSense - Primary Publisher Account
+google.com, ca-pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
 
-# Reseller Domains
-reseller-account: ca-pub-XXXXXXXXXXXXXXXX
+# Google Ad Manager (Formerly DoubleClick for Publishers)
+google.com, pub-XXXXXXXXXXXXXXXX, RESELLER, f08c47fec0942fa0
 
-# Additional seller information
+# Google AdExchange
+google.com, pub-XXXXXXXXXXXXXXXX, RESELLER, f08c47fec0942fa0
+
+# =============================================================================
+# SECTION 2: MAJOR AD NETWORKS & EXCHANGES
+# =============================================================================
+
+# OpenX
+openx.com, 537148066, RESELLER, 6a698e2ec38604c6
+openx.com, 537148066, RESELLER, 6a698e2ec38604c6
+
+# Rubicon Project / Magnite
+rubiconproject.com, XXXXXXXX, RESELLER, 0bfd66d529a55807
+
+# AppNexus / Xandr
+appnexus.com, XXXXXXXX, RESELLER, f5ab79cb980f11d1
+
+# Criteo
+criteo.com, XXXXXXXX, RESELLER, bf7bd5c3193b3bff
+
+# Sonobi
+sonobi.com, ca-pub-XXXXXXXXXXXXXXXX, RESELLER, d4c29acad76ce94f
+
+# Conversant (ValueClick Media)
+conversantmedia.com, XXXXXXXX, RESELLER, 03113cd04947b4ca
+
+# Pubmatic
+pubmatic.com, XXXXXXXX, RESELLER, 5d62403b186f2ace
+
+# Improvement Ads
+improvementadvertising.com, XXXXXXXX, RESELLER, f25918637152fb38
+
+# =============================================================================
+# SECTION 3: PREMIUM & CONTEXTUAL NETWORKS
+# =============================================================================
+
+# MediaMath
+mediamath.com, XXXXXXXX, RESELLER, 43b46cc38aa08e21
+
+# The Trade Desk
+thetradedesk.com, XXXXXXXX, RESELLER, 6729031b-3001-4ee5-b9f3-8db187ce64e4
+
+# Quantcast
+quantcast.com, XXXXXXXX, RESELLER, 6bde8290b01efac3
+
+# Amazon Advertising Platform
+amazon-adsystem.com, XXXXXXXX, RESELLER, 596bbe55a3b2b9e3
+
+# Yahoo / Verizon Media
+advertising.com, XXXXXXXX, RESELLER, e1a5b5b6138e4e1f
+media.net, XXXXXXXX, RESELLER, c6dc18ceebvoip
+
+# =============================================================================
+# SECTION 4: HEADER BIDDING & WRAPPER PARTNERS
+# =============================================================================
+
+# Prebid.org
+prebid.org, , RESELLER
+
+# =============================================================================
+# SECTION 5: DIRECT PARTNERS & PRIVATE DEALS
+# =============================================================================
+
+# [Partner Name], [Partner Account ID], DIRECT, [Payment ID]
+# Contact: [Partner Contact Email]
+# Note: Add direct advertiser partnerships here
+
+# =============================================================================
+# SECTION 6: VERIFICATION & SITE INFORMATION
+# =============================================================================
+
+# Google Site Verification
+# google-site-verification: YOUR_GOOGLE_VERIFICATION_CODE
+
+# Ownership & Legal Contact
 contact-email: support@ganjagoddessai.com
 contact-url: https://ganjagoddessai.com/contact
 contact-phone: +1-XXXXXXXXXX
+organization-name: Ganja Goddess AI
+website-url: https://ganjagoddessai.com
+
+# =============================================================================
+# SECTION 7: DMCA & COMPLIANCE
+# =============================================================================
+
+# DMCA Contact Information
+dmca-contact: support@ganjagoddessai.com
+dmca-url: https://ganjagoddessai.com/dmca
+legal-contact: legal@ganjagoddessai.com
+
+# Privacy Policy Reference
+privacy-policy-url: https://ganjagoddessai.com/privacy-policy
+cookie-policy-url: https://ganjagoddessai.com/cookie-policy
+
+# =============================================================================
+# SECTION 8: RESELLER INFORMATION
+# =============================================================================
+
+# Reseller Domains - If ganjagoddessai.com uses resellers
+# Format: reseller-domain, account-id, relationship-type
+
+# =============================================================================
+# SECTION 9: NOTES & MAINTENANCE
+# =============================================================================
+
+# NOTE: This file should be reviewed quarterly
+# NOTE: Replace all XXXXXXXX placeholders with actual account IDs
+# NOTE: Ensure all network relationships are current and valid
+# NOTE: Test ads.txt validity at: https://adstxt.advangellist.com/
+#       or https://tools.adblacklist.org/ads-txt-checker/
+#
+# BEST PRACTICES:
+# - Keep entries in alphabetical order within sections
+# - Remove inactive/unused ad networks quarterly
+# - Maintain current contact information
+# - Monitor for brand safety issues
+# - Test bidder response times and fill rates
+# - Review reports for invalid traffic (IVT) and brand safety concerns
+# - Communicate any changes to partners 48 hours in advance
+#
+# SECURITY NOTES:
+# - This file should not expose sensitive payment information
+# - Use account IDs, not API keys or credentials
+# - Serve over HTTPS only
+# - Restrict access via robots.txt if needed
+# - Monitor for unauthorized modifications
+#
+# DOCUMENTATION:
+# - IAB Tech Lab: https://iabtechlab.com/ads-txt/
+# - Google Publisher Help: https://support.google.com/publisherenter/answer/9017202
+# - OpenRTB: https://www.openrtb.org/
