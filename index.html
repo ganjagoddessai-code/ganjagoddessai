@@ -9,15 +9,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KN8SMF48');</script>
 <!-- End Google Tag Manager -->
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) - FIXED: Removed duplicate, kept single instance -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K3FLEJ97"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-R9K3FLEJ97');
+  gtag('config', 'G-R9K3FLEJ97', {
+    'allow_google_signals': true,
+    'allow_ad_personalization_signals': true,
+    'cookie_domain': ['ganjagoddessai.com', 'ganjagoddessai.info', 'ganjagoddessai.org', 'ganjagoddessai.store']
+  });
+
+  // Track additional GA4 property if needed
+  gtag('config', 'G-9MW3MB134F', {
+    'allow_google_signals': true,
+    'allow_ad_personalization_signals': true,
+    'cookie_domain': ['ganjagoddessai.com', 'ganjagoddessai.info', 'ganjagoddessai.org', 'ganjagoddessai.store']
+  });
 </script>
+
+<!-- FIXED: Added missing Google Site Verification -->
+<meta name="google-site-verification" content="googleb940144c6b75c512">
+
+<!-- FIXED: Added missing Google AdSense Account -->
+<meta name="google-adsense-account" content="ca-pub-1097964798960926">
 
 <meta charset="UTF-8">
 <title>Ganjagoddessai Orbital AI</title>
@@ -465,7 +482,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <button onclick="captureEmail()" style="width:100%;margin-top:5px;">Join</button>
 </div>
 
-<div id="exit-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:black; border:1px solid #39ff14; padding:20px; z-index:10000; text-align:center;">
+<div id="exit-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:black; border:1px solid #39ff14; padding:20px; z-index:10000; text-align:center; width:90%; max-width:300px;">
   <h3>🚀 Before You Go...</h3>
   <p>Join early access to the AI system</p>
   <input id="exitEmail" placeholder="Enter email" style="width:100%;margin-top:5px;">
@@ -546,7 +563,7 @@ const ctx=canvas.getContext("2d");
 function resize(){canvas.width=innerWidth;canvas.height=innerHeight;}
 window.addEventListener("resize",resize,{passive:true});resize();
 let stars=Array.from({length:120},()=>({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*2}));
-function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#39ff14";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();s.y+=0.2;if(s.y>canvas.height)s.y=-5;});requestAnimationFrame(draw);}
+function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="#39ff14";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();s.y+=0.2;if(s.y>canvas.height)s.y=0;});requestAnimationFrame(draw);}
 draw();
 
 function captureEmail(){
